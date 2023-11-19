@@ -1,0 +1,104 @@
+// Remove the standard internal, external indents and frames and make smooth scrolling.
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+}
+
+// Change the way the height and width of elements are calculated
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+// Remove stroke around pseudo-classes
+:focus,
+:active {
+  outline: none;
+}
+
+// Remove stroke around pseudo-classes for links
+a:focus,
+a:active {
+  outline: none;
+}
+
+// Change position type
+nav,
+header,
+aside,
+footer {
+  display: block;
+}
+
+// Set base values
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+// Inheriting font styles
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+// Remove the standard cross in the input window
+input::-ms-clear {
+  display: none;
+}
+
+// Change default cursor
+button {
+  cursor: pointer;
+}
+
+// Remove indents
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+// Remove the backlight
+a,
+a:visited {
+  text-decoration: none;
+}
+
+// Remove the backlight
+a:hover {
+  text-decoration: none;
+}
+
+// Remove markers
+ul li {
+  list-style: none;
+}
+
+// Change default property
+img {
+  vertical-align: top;
+}
+
+// Inheriting font styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}

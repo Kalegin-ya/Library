@@ -1,3 +1,15 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -86,4 +98,77 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
+}
+
+/* inter-400 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v13-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* forum-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/forum-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.header {
+  background-color: #0C0C0E;
+  color: #FFFFFF;
+}
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+.header__right-side {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  font-family: Forum;
+  font-size: 30px;
+  letter-spacing: 0.6px;
+}
+.header__nav-body {
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 250%;
+}
+.header__nav-list {
+  display: flex;
+}
+.header__nav-list li {
+  padding: 0 15px;
+}
+.header__nav-list li a {
+  color: #FFFFFF;
+}
+.header__profile {
+  margin-left: 15px;
+}
+.header__profile a {
+  padding: 10px;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.footer {
+  background-color: red;
+  height: 150px;
 }/*# sourceMappingURL=style.css.map */

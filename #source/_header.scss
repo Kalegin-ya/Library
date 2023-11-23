@@ -1,0 +1,45 @@
+.header {  
+  background-color: #0C0C0E;
+  color: #FFFFFF;   
+
+    &__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;    
+      height: 90px;
+    }  
+    
+    &__right-side {
+      display: flex;
+      align-items: center;
+    }
+
+		&__logo {       
+      font-family: Forum;
+      font-size: 30px;          
+      letter-spacing: 0.6px;
+		}
+
+		&__nav-body {         
+      font-family: Inter;
+      font-size: 20px;          
+      line-height: 250%;  
+		}
+
+		&__nav-list {    
+      display: flex;       
+      li {
+        padding: 0 15px; 
+        a {
+          color: #FFFFFF; 
+        }                   
+      }     
+		}
+
+		&__profile {
+      margin-left: 15px;
+      a {
+        padding: 10px;  
+      }          
+		}
+}

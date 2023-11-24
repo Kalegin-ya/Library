@@ -4,10 +4,14 @@
   min-height: 100%;
 }
 
+main {
+  flex-grow: 1; 
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px;  	
 }
 
 @import "null-style";
@@ -15,3 +19,5 @@
 @import "fonts";
 @import "header";
 @import "welcome";
+@import "about";
+@import "footer";

@@ -1,8 +1,30 @@
-main {
-  flex-grow: 1; 
-}
+.container__welcome {
+      min-height: 600px;
+      height: 100%;    
+      padding-top: 220px;      
+      background: linear-gradient(180deg, #0C0C0E 0%, rgba(18, 18, 21, 0.10) 50%, rgba(255, 255, 255, 0) 50.01%), url(../img/welcome.jpg);
+		}
 
-.footer {
-  background-color: red;
-  height: 150px;
-}
+.welcome {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Forum;
+    font-size: 40px;    
+    line-height: 125%;
+    letter-spacing: 3px;
+    text-transform: uppercase;   
+
+		&__body {
+      background-color: $black-special;
+      max-width: 600px;
+      padding: 35px 40px;  
+      position: relative;
+      left: -20px;    
+		}	
+}	
+
+
+
+
+
+

@@ -1,12 +1,15 @@
-.header {  
-  background-color: #0C0C0E;
+.container__header {
+  background-color: $black-special;
+}
+
+.header {    
   color: #FFFFFF;   
 
     &__body {
       display: flex;
       justify-content: space-between;
       align-items: center;    
-      height: 90px;
+      height: 90px;      
     }  
     
     &__right-side {

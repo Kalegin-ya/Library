@@ -128,8 +128,11 @@ h6 {
   font-weight: 400;
   src: url("../fonts/forum-v18-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-.header {
+.container__header {
   background-color: #0C0C0E;
+}
+
+.header {
   color: #FFFFFF;
 }
 .header__body {
@@ -187,6 +190,54 @@ h6 {
   padding: 35px 40px;
   position: relative;
   left: -20px;
+}
+
+.about__about-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__title {
+  color: #0C0C0E;
+  font-family: Forum;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+.about__underline {
+  width: 50px;
+  height: 1px;
+  background-color: #0C0C0E;
+  margin-bottom: 40px;
+}
+.about__subtitle {
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 200%;
+  margin-bottom: 20px;
+}
+.about__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.circle {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+.circle__item {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #0C0C0E;
+  margin: 0 5px;
+}
+.circle__item_active {
+  background-color: #BB945F;
 }
 
 .footer {

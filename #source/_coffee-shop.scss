@@ -1,0 +1,113 @@
+.coffee-shop {
+  margin-bottom: 60px;
+  
+  &__title {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 200%;
+    letter-spacing: 2px; 
+    margin-bottom: 40px;   
+    padding-top: 20px;
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;        
+  }
+
+  &__drinks-card {
+  }
+
+  &__deserts-card {  
+    padding-right: 10px;    
+  }
+}
+
+.drinks-card {
+  &__title {
+    color: $orange-special;
+    font-family: Forum;
+    font-size: 40px;     
+    line-height: 100%;
+    letter-spacing: 2px;   
+    margin-bottom: 40px; 
+  }
+
+  &__content {
+    display: grid;    
+    grid-template-columns: 1fr 100px 21px;
+    column-gap: 60px;
+    row-gap: 40px;
+    align-items: center;         
+  }
+
+  &__name {
+    font-family: Inter;
+    font-size: 20px;   
+    line-height: 200%;
+    letter-spacing: 2px;  
+    text-transform: capitalize;
+  }
+
+  &__space {
+    width: 100px;    
+    height: 1px;
+    background-color: $orange-special;
+  }
+
+  &__cost {
+    font-family: Forum;
+    font-size: 20px;   
+    line-height: 200%;
+    letter-spacing: 2px;  
+  }
+}
+.deserts-card {
+  
+  &__title {
+    color: $orange-special;
+    font-family: Forum;
+    font-size: 40px;     
+    line-height: 100%;
+    letter-spacing: 2px; 
+    margin-bottom: 40px; 
+    text-align: end;  
+    margin-right: -10px;           
+  }
+
+  &__content {
+    display: grid;
+    grid-template-rows: 6;
+    grid-template-columns: 1fr 100px 21px;
+    column-gap: 60px;
+    row-gap: 40px;
+    align-items: center;
+  }
+
+  &__name {    
+    font-family: Inter;
+    font-size: 20px;   
+    line-height: 200%;
+    letter-spacing: 2px; 
+    text-align: end;    
+  }
+
+  &__space {
+    width: 100px;    
+    height: 1px;
+    background-color: $orange-special;
+  }
+
+  &__cost {
+    font-family: Forum;
+    font-size: 20px;   
+    line-height: 200%;
+    letter-spacing: 2px;  
+  }
+}

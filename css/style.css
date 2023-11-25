@@ -309,6 +309,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 20px;
   margin-right: 40px;
 }
 .card_discription {
@@ -379,6 +380,103 @@ main {
   line-height: 266.667%;
   letter-spacing: 2px;
   margin-bottom: 20px;
+}
+
+.coffee-shop {
+  margin-bottom: 60px;
+}
+.coffee-shop__title {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.coffee-shop__subtitle {
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
+.coffee-shop__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.coffee-shop__deserts-card {
+  padding-right: 10px;
+}
+
+.drinks-card__title {
+  color: #BB945F;
+  font-family: Forum;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+.drinks-card__content {
+  display: grid;
+  grid-template-columns: 1fr 100px 21px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  row-gap: 40px;
+  align-items: center;
+}
+.drinks-card__name {
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.drinks-card__space {
+  width: 100px;
+  height: 1px;
+  background-color: #BB945F;
+}
+.drinks-card__cost {
+  font-family: Forum;
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: 2px;
+}
+
+.deserts-card__title {
+  color: #BB945F;
+  font-family: Forum;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  text-align: end;
+  margin-right: -10px;
+}
+.deserts-card__content {
+  display: grid;
+  grid-template-rows: 6;
+  grid-template-columns: 1fr 100px 21px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  row-gap: 40px;
+  align-items: center;
+}
+.deserts-card__name {
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: 2px;
+  text-align: end;
+}
+.deserts-card__space {
+  width: 100px;
+  height: 1px;
+  background-color: #BB945F;
+}
+.deserts-card__cost {
+  font-family: Forum;
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: 2px;
 }
 
 .footer {

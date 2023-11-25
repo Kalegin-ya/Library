@@ -1,3 +1,13 @@
+@import "null-style";
+@import "variables";
+@import "fonts";
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;  	
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;  
@@ -8,16 +18,25 @@ main {
   flex-grow: 1; 
 }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 20px;  	
+.title {
+  color: $black-special;
+  font-family: Forum;
+  font-size: 40px;       
+  line-height: 100%;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+
+  &__underline {
+    width: 50px;
+    height: 1px;      
+    background-color: $black-special;  
+  }
 }
 
-@import "null-style";
-@import "variables";
-@import "fonts";
 @import "header";
 @import "welcome";
 @import "about";
+@import "favorites";
 @import "footer";

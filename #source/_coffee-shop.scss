@@ -1,5 +1,4 @@
-.coffee-shop {
-  margin-bottom: 60px;
+.coffee-shop {   
   
   &__title {
     margin-bottom: 20px;
@@ -44,7 +43,8 @@
     grid-template-columns: 1fr 100px 21px;
     column-gap: 60px;
     row-gap: 40px;
-    align-items: center;         
+    align-items: center;  
+    margin-bottom: 60px;       
   }
 
   &__name {

@@ -77,10 +77,10 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-bottom: 20px;
+      padding-bottom: 20px;
       margin-right: 40px;      
 
-        &_discription {
+        &__discription {
           font-family: Inter;
           font-size: 15px;            
           line-height: 266.667%;
@@ -90,7 +90,7 @@
           flex-grow: 1;
         }
 
-        &_button {
+        &__button {
           margin-bottom: 15px;
           width: 75px;
           height: 30px;
@@ -100,7 +100,13 @@
           font-family: Inter;
           font-size: 10px;         
           font-weight: 700;          
-          letter-spacing: 1px;                   
+          letter-spacing: 1px;  
+          animation-duration: 0.25s;                 
+        }
+
+        &__button:hover {
+          border-color: #BB945F;
+          border-radius: 2px;                  
         }
 
         &__item {

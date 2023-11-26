@@ -5,7 +5,8 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;  	
+  padding: 0 20px;  
+  background-color: white;	  
 }
 
 .wrapper {
@@ -14,8 +15,12 @@
   min-height: 100%;
 }
 
+html {
+  background-color: rgba($color: rgb(231, 94, 94), $alpha: 0.25);  
+}
+
 main {
-  flex-grow: 1; 
+  flex-grow: 1;   
 }
 
 .title {

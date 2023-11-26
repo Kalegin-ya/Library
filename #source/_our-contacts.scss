@@ -1,5 +1,4 @@
 .contacts { 
-  margin-bottom: 60px;
 
 		&__title {
       margin-bottom: 20px;
@@ -33,19 +32,27 @@
       margin-bottom: 20px;
 		}
 
-    &__info:nth-child(4) {
+   &__info:nth-child(4) {
       margin-bottom: 40px;
-    }
+   }
 
-    &__info:nth-child(5) {
+   &__info:nth-child(5) {
       font-weight: 700;
-    }
+   }
 
 		&__info-bold {
       font-weight: 700;
 		}
 
 		&__map {
-     object-fit: contain;
+      object-fit: contain;
+      margin-bottom: 60px;
+      transition-duration: 1s;
+      cursor: pointer;
 		}
+
+      &__map:active {
+         scale: 205%;         
+         transform: translateX(-25%);         
+      }
 }

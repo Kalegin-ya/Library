@@ -33,13 +33,42 @@
       display: flex;       
       li {
         padding: 0 15px; 
-        a {
-          color: #FFFFFF; 
-        }                   
-      }     
-		}
 
-		&__profile {
-      margin-left: 25px;            
-		}
+          a {
+          color: #FFFFFF;           
+          position: relative;          
+        } 
+
+          a::before {
+            content: "";
+            width: 1px;
+            height: 2px;
+            transition-duration: 0.5s;
+          }
+        
+          a:hover {
+          color: $orange-special;
+          transition-duration: 0.25s;
+        } 
+
+          a:hover::before {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background-color: $orange-special;        
+          position: absolute; 
+          bottom: -3px;
+          left: 0;             
+        }
+      }  
+    }  
+      &__profile {
+        margin-left: 25px;  
+        transition-duration: 0.25s;          
+      }
+
+      &__profile:hover {
+        scale: 110%;           
+      }
+  
 }

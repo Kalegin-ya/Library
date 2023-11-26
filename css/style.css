@@ -116,12 +116,17 @@ h6 {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+  background-color: white;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+}
+
+html {
+  background-color: rgba(231, 94, 94, 0.25);
 }
 
 main {
@@ -179,9 +184,33 @@ main {
 }
 .header__nav-list li a {
   color: #FFFFFF;
+  position: relative;
+}
+.header__nav-list li a::before {
+  content: "";
+  width: 1px;
+  height: 2px;
+  transition-duration: 0.5s;
+}
+.header__nav-list li a:hover {
+  color: #BB945F;
+  transition-duration: 0.25s;
+}
+.header__nav-list li a:hover::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #BB945F;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
 }
 .header__profile {
   margin-left: 25px;
+  transition-duration: 0.25s;
+}
+.header__profile:hover {
+  scale: 110%;
 }
 
 .container__welcome {
@@ -228,7 +257,7 @@ main {
 }
 
 .circle {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   display: flex;
   justify-content: center;
 }
@@ -309,10 +338,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   margin-right: 40px;
 }
-.card_discription {
+.card__discription {
   font-family: Inter;
   font-size: 15px;
   line-height: 266.667%;
@@ -321,7 +350,7 @@ main {
   margin-bottom: 15px;
   flex-grow: 1;
 }
-.card_button {
+.card__button {
   margin-bottom: 15px;
   width: 75px;
   height: 30px;
@@ -332,6 +361,11 @@ main {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 1px;
+  animation-duration: 0.25s;
+}
+.card__button:hover {
+  border-color: #BB945F;
+  border-radius: 2px;
 }
 .card__item {
   min-width: 550px;
@@ -382,9 +416,6 @@ main {
   margin-bottom: 20px;
 }
 
-.coffee-shop {
-  margin-bottom: 60px;
-}
 .coffee-shop__title {
   margin-bottom: 20px;
   text-transform: capitalize;
@@ -421,6 +452,7 @@ main {
        column-gap: 60px;
   row-gap: 40px;
   align-items: center;
+  margin-bottom: 60px;
 }
 .drinks-card__name {
   font-family: Inter;
@@ -479,9 +511,6 @@ main {
   letter-spacing: 2px;
 }
 
-.contacts {
-  margin-bottom: 60px;
-}
 .contacts__title {
   margin-bottom: 20px;
 }
@@ -520,6 +549,13 @@ main {
 .contacts__map {
   -o-object-fit: contain;
      object-fit: contain;
+  margin-bottom: 60px;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+.contacts__map:active {
+  scale: 205%;
+  transform: translateX(-25%);
 }
 
 .digital-cards__title {
@@ -574,6 +610,10 @@ main {
   justify-content: center;
   align-items: center;
   margin-left: 20px;
+  transition-duration: 0.2s;
+}
+.digital-cards__button:hover {
+  background-color: rgb(103, 204, 103);
 }
 
 .check-form {
@@ -598,13 +638,13 @@ main {
   height: 66px;
   border-radius: 10px;
   margin: 20px 0 25px 0;
-  color: #8E8E8E;
   font-family: Forum;
   font-size: 30px;
   font-weight: 400;
   line-height: 166.667%;
   letter-spacing: 0.6px;
   padding-left: 20px;
+  color: #BB945F;
 }
 .check-form__card-number {
   width: 520px;
@@ -633,6 +673,10 @@ main {
   border: 1px solid #0C0C0E;
   background-color: white;
   margin-bottom: 23px;
+  transition-duration: 0.2s;
+}
+.check-form__button:hover {
+  background-color: rgb(103, 204, 103);
 }
 
 .container__footer {
@@ -676,6 +720,10 @@ main {
   width: 24px;
   height: 24px;
   margin-right: 15px;
+  transition-duration: 0.25s;
+}
+.footer__social-link:hover {
+  scale: 150%;
 }
 .footer__work-day-holidays {
   width: 149px;
@@ -703,8 +751,22 @@ main {
   min-width: 33.333%;
   text-align: center;
 }
+.footer__rss a {
+  color: white;
+  transition-duration: 0.25s;
+}
+.footer__rss a:hover {
+  color: yellowgreen;
+}
 .footer__username {
   line-height: 200%;
   min-width: 33.333%;
   text-align: end;
+}
+.footer__username a {
+  color: white;
+  transition-duration: 0.25s;
+}
+.footer__username a:hover {
+  color: yellowgreen;
 }/*# sourceMappingURL=style.css.map */

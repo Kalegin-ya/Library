@@ -204,6 +204,7 @@ main {
   position: absolute;
   bottom: -3px;
   left: 0;
+  opacity: 0.5;
 }
 .header__profile {
   margin-left: 25px;

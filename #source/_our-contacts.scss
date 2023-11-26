@@ -1,0 +1,51 @@
+.contacts { 
+  margin-bottom: 60px;
+
+		&__title {
+      margin-bottom: 20px;
+		}
+
+		&__underline {      
+      margin-bottom: 40px;
+		}
+
+    &__body {
+      display: flex;
+      justify-content: space-between;
+    }
+
+		&__content {     
+      text-align: center;
+      font-family: Inter;
+      font-size: 20px;       
+      line-height: 200%;
+      letter-spacing: 2px;  
+      text-align: left;  
+      text-transform: capitalize;  
+		}
+
+		&__subtitle {
+      font-weight: 700;
+      margin-bottom: 40px;
+		}
+
+		&__info {
+      margin-bottom: 20px;
+		}
+
+    &__info:nth-child(4) {
+      margin-bottom: 40px;
+    }
+
+    &__info:nth-child(5) {
+      font-weight: 700;
+    }
+
+		&__info-bold {
+      font-weight: 700;
+		}
+
+		&__map {
+     object-fit: contain;
+		}
+}

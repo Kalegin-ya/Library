@@ -479,6 +479,49 @@ main {
   letter-spacing: 2px;
 }
 
+.contacts {
+  margin-bottom: 60px;
+}
+.contacts__title {
+  margin-bottom: 20px;
+}
+.contacts__underline {
+  margin-bottom: 40px;
+}
+.contacts__body {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__content {
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: 2px;
+  text-align: left;
+  text-transform: capitalize;
+}
+.contacts__subtitle {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.contacts__info {
+  margin-bottom: 20px;
+}
+.contacts__info:nth-child(4) {
+  margin-bottom: 40px;
+}
+.contacts__info:nth-child(5) {
+  font-weight: 700;
+}
+.contacts__info-bold {
+  font-weight: 700;
+}
+.contacts__map {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .footer {
   background-color: red;
   height: 150px;

@@ -1,4 +1,11 @@
-.contacts { 
+.contacts {       
+
+      a {
+      color: black;      
+      }  
+      a:hover {
+         color: blue;
+      } 
 
 		&__title {
       margin-bottom: 20px;
@@ -32,9 +39,9 @@
       margin-bottom: 20px;
 		}
 
-   &__info:nth-child(4) {
-      margin-bottom: 40px;
-   }
+      &__info:nth-child(4) {
+         margin-bottom: 40px;
+      }
 
    &__info:nth-child(5) {
       font-weight: 700;
@@ -46,13 +53,7 @@
 
 		&__map {
       object-fit: contain;
-      margin-bottom: 60px;
-      transition-duration: 1s;
-      cursor: pointer;
+      margin-bottom: 60px;           
 		}
-
-      &__map:active {
-         scale: 205%;         
-         transform: translateX(-25%);         
-      }
+      
 }

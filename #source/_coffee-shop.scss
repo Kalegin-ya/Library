@@ -10,7 +10,7 @@
     font-family: Inter;
     font-size: 20px;
     line-height: 200%;
-    letter-spacing: 2px; 
+    letter-spacing: 1.95px; 
     margin-bottom: 40px;   
     padding-top: 20px;
   }
@@ -18,6 +18,29 @@
   &__flex {
     display: flex;
     justify-content: space-between;        
+  }
+
+    @media (max-width: 1245px) {
+    &__flex {
+      flex-direction: column;     
+    }   
+    
+    &__drinks-card { 
+        max-width: 440px;        
+    }
+
+    &__deserts-card { 
+        max-width: 440px;
+        align-self: flex-end;
+        margin-bottom: 40px;
+    }
+
+    @media (max-width: 1245px) {
+      &__deserts-card { 
+        max-width: 465px;
+        margin-bottom: 60px;
+    }
+    }
   }
 
   &__drinks-card {
@@ -45,7 +68,13 @@
     row-gap: 40px;
     align-items: center;  
     margin-bottom: 60px;       
+  }    
+
+  @media (max-width: 1245px) { 
+    &__content {
+      margin-bottom: 40px;       
   }
+    } 
 
   &__name {
     font-family: Inter;

@@ -13,6 +13,13 @@
       justify-content: space-between;
 		}
 
+      @media (max-width: 1245px) {
+         &__body {
+            flex-direction: column;
+            align-items: center;
+         }
+      }
+
 		&__left-side {
       max-width: 600px;
 		}
@@ -26,10 +33,22 @@
 		}
 
 		&__check-form {
+
 		}
 
 		&__right-side {
-		}
+
+		}     
+
+      @media (max-width: 1245px) {
+            &__right-side {
+               display: flex;
+               flex-direction: column;
+               text-align: center;
+               align-items: center;
+               margin-bottom: 40px;
+         }
+      }
 
 		&__right-title {  
       text-align: end; 
@@ -50,6 +69,19 @@
       margin-bottom: 35px;
 		}
 
+      @media (max-width: 1245px) {
+            &__right-subtitle {        
+         margin-bottom: 42px;
+         }
+      }
+
+      @media (max-width: 1245px) {
+            &__right-subtitle {
+               max-width: 600px;
+               text-align: center;
+         }
+      }
+
     &__buttons {
       text-align: end;
     }
@@ -67,7 +99,7 @@
       align-items: center;
       margin-left: 20px;
       transition-duration: 0.2s;
-		}
+		}    
 
       &__button:hover {
          background-color:rgb(103, 204, 103);
@@ -76,12 +108,12 @@
 
 .check-form {  
   border: 3px solid $orange-special; 
-  margin-bottom: 40px; 
+  margin-bottom: 40px;   
 
   &__bg {
     background: #BB945F;
     padding: 20px 20px 0 20px;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;    
   }
 
 
@@ -95,7 +127,7 @@
 		}
 
 		&__name {             
-      width: 520px;
+      min-width: 520px;      
       height: 66px;
       border-radius: 10px;
       margin: 20px 0 25px 0;     
@@ -105,11 +137,11 @@
       line-height: 166.667%;
       letter-spacing: 0.6px;
       padding-left: 20px;      
-      color: #BB945F;
+      color: #BB945F;      
 		}
 
 		&__card-number {
-      width: 520px;
+      min-width: 520px;      
       height: 66px;
       border-radius: 10px;      
       margin-bottom: 25px;
@@ -138,9 +170,19 @@
       background-color: white;  
       margin-bottom: 23px;  
       transition-duration: 0.2s;               
-		}
+		}      
 
       &__button:hover {
          background-color:rgb(103, 204, 103);
       }
 }                                                                
+
+@media (max-width: 1245px) {
+   .check-form {
+      margin-bottom: 15px;
+   }
+
+   .digital-cards__button:first-child {
+      margin-left: 0;
+   }
+}

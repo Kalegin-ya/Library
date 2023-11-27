@@ -75,12 +75,12 @@
 		}
 
 		&__year { 
-      min-width: 33.333%;       
+      min-width: 20%;       
 		}
 
 		&__rss {
-      min-width: 33.333%; 
-      text-align: center;
+      min-width: 60%; 
+      text-align: center;          
          
          a {
             color: white;
@@ -90,11 +90,11 @@
          a:hover {
             color: yellowgreen;
          }
-		}
+		}       
 
 		&__username {
       line-height: 200%;
-      min-width: 33.333%;   
+      min-width: 20%;   
       text-align: end;   
       
          a {

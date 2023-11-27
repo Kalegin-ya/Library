@@ -68,9 +68,9 @@
           }
         }       
 
-        &__cards {      
-
-        }
+          &__cards {       
+            
+          }  
         }
 
     .card {
@@ -78,7 +78,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
       padding-bottom: 20px;
-      margin-right: 40px;      
+      margin-right: 40px;              
 
         &__discription {
           font-family: Inter;
@@ -114,7 +114,11 @@
           border: 1px solid black;   
           padding-left: 20px;  
           position: relative;
-          margin-bottom: 40px;               
+          margin-bottom: 40px;  
+          margin-right: 40px;   
+          
+
+         
 
           img {
             position: absolute;
@@ -122,7 +126,14 @@
             bottom: -1px;
             z-index: 1;
           }
-        }
+        }   
+
+        @media (max-width: 1245px) {
+          &__item {
+            margin-right: 0px;
+            height: 555px;
+          }
+        }            
 
         &__content {
           max-width: 357px;  
@@ -164,3 +175,9 @@
         margin-bottom: 20px;      
         }
   }
+
+@media (max-width: 1245px) {
+          .card {     
+            justify-content: space-around;                   
+          }          
+        }

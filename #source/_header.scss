@@ -102,20 +102,23 @@
       
 
       &__line-1 {
-        width: 45px;           
-        border: 1px white solid;
+        width: 45px;     
+        height: 1px;
+        background: white;        
         margin-bottom: 8px;
       }
 
       &__line-2 {
-        width: 45px;           
-        border: 1px white solid;
+        width: 45px;   
+        background: white;  
+        height: 1px;         
         margin-bottom: 8px;
       }
 
       &__line-3 {
-        width: 45px;           
-        border: 1px white solid;
+        width: 45px;
+        background: white; 
+        height: 1px;             
       }
   }
 }

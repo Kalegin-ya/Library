@@ -234,17 +234,20 @@ main {
   }
   .burger__line-1 {
     width: 45px;
-    border: 1px white solid;
+    height: 1px;
+    background: white;
     margin-bottom: 8px;
   }
   .burger__line-2 {
     width: 45px;
-    border: 1px white solid;
+    background: white;
+    height: 1px;
     margin-bottom: 8px;
   }
   .burger__line-3 {
     width: 45px;
-    border: 1px white solid;
+    background: white;
+    height: 1px;
   }
 }
 @media (max-width: 500px) {
@@ -705,6 +708,11 @@ main {
   letter-spacing: 2px;
   text-align: end;
 }
+@media (max-width: 600px) {
+  .deserts-card__name {
+    text-align: start;
+  }
+}
 .deserts-card__space {
   width: 100px;
   height: 1px;
@@ -820,6 +828,11 @@ main {
 
 .digital-cards__title {
   margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .digital-cards__title {
+    font-size: 35px;
+  }
 }
 .digital-cards__underline {
   margin-bottom: 35px;

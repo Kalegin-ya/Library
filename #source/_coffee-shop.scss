@@ -135,13 +135,20 @@
     align-items: center;
   }
 
+ 
   &__name {    
     font-family: Inter;
     font-size: 20px;   
     line-height: 200%;
     letter-spacing: 2px; 
     text-align: end;    
-  }  
+  } 
+
+  @media (max-width: 600px) {
+      &__name {
+        text-align: start;
+      }
+    }
 
   &__space {
     width: 100px;    

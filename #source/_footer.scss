@@ -74,6 +74,31 @@
       align-items: center;      
 		}
 
+      @media (max-width:700px) {
+
+         &__delimeter {         
+            margin-bottom: 25px;
+         }
+
+         &__third-line {
+            flex-direction: column;
+            justify-content: center;           
+         }
+
+         &__year { 
+         text-align: center; 
+         margin-bottom: 15px;                     
+         }
+
+         &__rss {
+            margin-bottom: 10px;
+         }
+
+         &__username {
+            margin-bottom: 10px;
+         }
+      }
+
 		&__year { 
       min-width: 20%;       
 		}
@@ -106,4 +131,10 @@
             color: yellowgreen;            
          }
 		}
+}
+
+@media (max-width: 700px) {
+   .footer {
+      height: auto;
+   }
 }

@@ -171,6 +171,11 @@ main {
   font-size: 30px;
   letter-spacing: 0.6px;
 }
+@media (max-width: 500px) {
+  .header__logo {
+    font-size: 22px;
+  }
+}
 .header__nav-body {
   font-family: Inter;
   font-size: 20px;
@@ -206,14 +211,47 @@ main {
   left: 0;
   opacity: 0.5;
 }
+@media (max-width: 1023px) {
+  .header__nav-list {
+    display: none;
+  }
+}
 .header__profile {
   margin-left: 25px;
   transition-duration: 0.25s;
+  display: flex;
 }
 .header__profile:hover {
   scale: 110%;
 }
 
+@media (max-width: 1023px) {
+  .burger {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .burger__line-1 {
+    width: 45px;
+    border: 1px white solid;
+    margin-bottom: 8px;
+  }
+  .burger__line-2 {
+    width: 45px;
+    border: 1px white solid;
+    margin-bottom: 8px;
+  }
+  .burger__line-3 {
+    width: 45px;
+    border: 1px white solid;
+  }
+}
+@media (max-width: 500px) {
+  .burger {
+    margin-left: 15px;
+  }
+}
 .container__welcome {
   min-height: 600px;
   height: 100%;
@@ -222,6 +260,18 @@ main {
   background-position: right;
 }
 
+@media (max-width: 767px) {
+  .container__welcome {
+    min-height: 400px;
+    padding-top: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .container__welcome {
+    min-height: 300px;
+    padding-top: 70px;
+  }
+}
 @media (max-width: 769px) {
   .container__welcome {
     background: linear-gradient(180deg, #0C0C0E 0%, rgba(18, 18, 21, 0.1) 50%, rgba(255, 255, 255, 0) 50.01%), url(../img/welcome-tablet.jpg);
@@ -245,6 +295,16 @@ main {
   left: -20px;
 }
 
+@media (max-width: 500px) {
+  .welcome {
+    font-size: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .welcome {
+    font-size: 26px;
+  }
+}
 .about__title {
   margin: 20px 0;
 }
@@ -258,13 +318,29 @@ main {
   line-height: 200%;
   margin-bottom: 20px;
 }
+.about__arrow {
+  display: none;
+}
 .about__arrow:first-child {
   padding-right: 58px;
 }
 .about__arrow:last-child {
   padding-left: 58px;
 }
-@media (min-width: 1246px) {
+@media (max-width: 1245px) {
+  .about__arrow {
+    display: block;
+  }
+}
+@media (max-width: 700px) {
+  .about__arrow:first-child {
+    padding-right: 25px;
+  }
+  .about__arrow:last-child {
+    padding-left: 25px;
+  }
+}
+@media (max-width: 600px) {
   .about__arrow {
     display: none;
   }
@@ -332,6 +408,7 @@ main {
   font-size: 20px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 700px;
   width: 100%;
   margin-bottom: 35x;
@@ -369,6 +446,12 @@ main {
 .favorites__form input:checked + span {
   font-weight: bold;
 }
+@media (max-width: 600px) {
+  .favorites__form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .favorites__radio {
   min-width: 100px;
   display: flex;
@@ -378,6 +461,11 @@ main {
 }
 .favorites__radio span {
   margin-left: 20px;
+}
+@media (max-width: 600px) {
+  .favorites h4 {
+    text-align: center;
+  }
 }
 .card {
   display: flex;
@@ -432,6 +520,18 @@ main {
     height: 555px;
   }
 }
+@media (max-width: 767px) {
+  .card__item {
+    min-width: auto;
+    height: auto;
+    margin-right: 0;
+  }
+  .card img {
+    top: 0;
+    right: 0;
+    width: 100px;
+  }
+}
 .card__content {
   max-width: 357px;
   height: 100%;
@@ -471,6 +571,17 @@ main {
 @media (max-width: 1245px) {
   .card {
     justify-content: space-around;
+  }
+}
+@media (max-width: 767px) {
+  .card {
+    margin-right: 0;
+  }
+  .card__title {
+    max-width: 200px;
+  }
+  .card__subtitle {
+    max-width: 200px;
   }
 }
 .coffee-shop__title {
@@ -547,6 +658,20 @@ main {
   height: 1px;
   background-color: #BB945F;
 }
+@media (max-width: 767px) {
+  .drinks-card__content {
+    grid-template-columns: 1fr 10px 21px;
+  }
+  .drinks-card__space {
+    width: 10px;
+  }
+  .drinks-card__name {
+    font-size: 15px;
+  }
+  .drinks-card__title {
+    text-align: center;
+  }
+}
 .drinks-card__cost {
   font-family: Forum;
   font-size: 20px;
@@ -591,6 +716,20 @@ main {
   line-height: 200%;
   letter-spacing: 2px;
 }
+@media (max-width: 767px) {
+  .deserts-card__content {
+    grid-template-columns: 1fr 10px 21px;
+  }
+  .deserts-card__space {
+    width: 10px;
+  }
+  .deserts-card__name {
+    font-size: 15px;
+  }
+  .deserts-card__title {
+    text-align: center;
+  }
+}
 
 .contacts a {
   color: black;
@@ -634,12 +773,23 @@ main {
     text-align: left;
   }
 }
+@media (max-width: 767px) {
+  .contacts__content {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
 .contacts__subtitle {
   font-weight: 700;
   margin-bottom: 40px;
 }
 .contacts__info {
   margin-bottom: 20px;
+}
+@media screen {
+  .contacts__info a span {
+    white-space: nowrap;
+  }
 }
 .contacts__info:nth-child(4) {
   margin-bottom: 40px;
@@ -660,6 +810,11 @@ main {
   .contacts__map {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__map {
+    max-width: 80vw;
   }
 }
 
@@ -790,6 +945,19 @@ main {
   letter-spacing: 0.6px;
   padding-left: 20px;
 }
+@media (max-width: 700px) {
+  .check-form__title {
+    font-size: 22px;
+  }
+  .check-form__name {
+    min-width: auto;
+    font-size: 20px;
+  }
+  .check-form__card-number {
+    min-width: auto;
+    font-size: 20px;
+  }
+}
 .check-form__container-button {
   text-align: center;
 }
@@ -883,6 +1051,25 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 700px) {
+  .footer__delimeter {
+    margin-bottom: 25px;
+  }
+  .footer__third-line {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__year {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .footer__rss {
+    margin-bottom: 10px;
+  }
+  .footer__username {
+    margin-bottom: 10px;
+  }
+}
 .footer__year {
   min-width: 20%;
 }
@@ -908,4 +1095,10 @@ main {
 }
 .footer__username a:hover {
   color: yellowgreen;
+}
+
+@media (max-width: 700px) {
+  .footer {
+    height: auto;
+  }
 }/*# sourceMappingURL=style.css.map */

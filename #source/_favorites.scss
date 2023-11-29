@@ -16,6 +16,7 @@
         font-size: 20px;       
         display: flex;      
         justify-content: space-between;  
+        flex-wrap: wrap;
         max-width: 700px;
         width: 100%; 
         margin-bottom: 35x;
@@ -55,6 +56,17 @@
           font-weight: bold;
         }           
       }
+
+      @media (max-width: 600px) {
+        &__form {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        &__radio {
+          
+        }
+      }
     
       &__radio {   
         min-width: 100px;                
@@ -71,6 +83,14 @@
           &__cards {       
             
           }  
+        }
+
+        @media (max-width: 600px) {
+          .favorites {
+            h4 {
+              text-align: center;
+            }
+          }
         }
 
     .card {
@@ -133,7 +153,21 @@
             margin-right: 0px;
             height: 555px;
           }
-        }            
+        }     
+        
+        @media (max-width: 767px) {
+
+          &__item {
+            min-width: auto;
+            height: auto;
+            margin-right: 0;
+          }
+          img{
+            top: 0;
+            right: 0;
+            width: 100px;          
+          }
+        } 
 
         &__content {
           max-width: 357px;  
@@ -180,4 +214,18 @@
           .card {     
             justify-content: space-around;                   
           }          
+        }
+
+        @media (max-width: 767px) {
+          .card {
+              margin-right: 0;  
+
+              &__title {
+                max-width: 200px;
+              }
+
+              &__subtitle {
+                max-width: 200px;
+              }
+        }       
         }

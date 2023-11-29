@@ -6,12 +6,28 @@
       background-position: right;
 		}
 
+      @media (max-width: 767px) {
+         .container__welcome {
+         min-height: 400px;            
+         padding-top: 100px;        
+         }
+      }
+
+       @media (max-width: 400px) {
+         .container__welcome {
+         min-height: 300px;            
+         padding-top: 70px;        
+         }
+      }
+
       @media (max-width: 769px) {
          .container__welcome {            
          background: linear-gradient(180deg, #0C0C0E 0%, rgba(18, 18, 21, 0.10) 50%, rgba(255, 255, 255, 0) 50.01%), url(../img/welcome-tablet.jpg);
          background-position: right;
 		   }
-      }
+      }         
+
+      
 
 .welcome {
       color: #FFFFFF;
@@ -20,8 +36,8 @@
       font-size: 40px;    
       line-height: 125%;
       letter-spacing: 3px;
-      text-transform: uppercase; 
-      
+      text-transform: uppercase;       
+
 
 		&__body {
       background-color: $black-special;
@@ -31,6 +47,18 @@
       left: -20px;    
 		}	
 }	
+
+  @media (max-width: 500px) {
+         .welcome {
+         font-size: 30px;
+         }           
+   }
+
+   @media (max-width: 400px) {
+         .welcome {
+         font-size: 26px;
+         }           
+   }
 
 
 

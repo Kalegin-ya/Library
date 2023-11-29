@@ -107,23 +107,23 @@
 }
 
 .check-form {  
-  border: 3px solid $orange-special; 
-  margin-bottom: 40px;   
+   border: 3px solid $orange-special; 
+   margin-bottom: 40px;   
 
-  &__bg {
-    background: #BB945F;
-    padding: 20px 20px 0 20px;
-    margin: 20px 20px 20px 20px;    
-  }
+   &__bg {
+      background: #BB945F;
+      padding: 20px 20px 0 20px;
+      margin: 20px 20px 20px 20px;    
+   }
 
 
 		&__title {   
-    font-family: Forum;
-    font-size: 30px;   
-    line-height: 166.667%;
-    letter-spacing: 0.6px;   
-    display: flex;
-    flex-direction: column;      
+      font-family: Forum;
+      font-size: 30px;   
+      line-height: 166.667%;
+      letter-spacing: 0.6px;   
+      display: flex;
+      flex-direction: column;      
 		}
 
 		&__name {             
@@ -153,6 +153,24 @@
       letter-spacing: 0.6px;
       padding-left: 20px;
 		}
+
+      @media (max-width: 700px) {
+
+         &__title {           
+         font-size: 22px;               
+         }
+
+         &__name {             
+      min-width: auto;  
+      font-size: 20px;    
+         
+		}
+
+		&__card-number {
+      min-width: auto;      
+      font-size: 20px; 
+		   }
+      }
 
     &__container-button {
       text-align: center;

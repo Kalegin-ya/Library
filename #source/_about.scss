@@ -16,7 +16,8 @@
       margin-bottom: 20px;
 		}
 
-      &__arrow {         
+      &__arrow {  
+         display: none;         
       }
 
       &__arrow:first-child {
@@ -27,9 +28,27 @@
          padding-left: 58px;
       }
 
-      @media (min-width: 1246px) {
+      @media (max-width: 1245px) {
             &__arrow {
-               display: none;              
+               display: block;              
+         }
+      }
+
+      @media (max-width: 700px) {
+
+            &__arrow:first-child {
+         padding-right: 25px;
+         }
+
+         &__arrow:last-child {
+            padding-left: 25px;
+         }
+
+      }
+
+      @media (max-width: 600px) {
+            &__arrow {
+               display: none;                             
          }
       }
 
